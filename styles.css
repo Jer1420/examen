@@ -1,0 +1,164 @@
+/* Styles pour le logo et le menu de navigation */
+header {
+  background-color: #f8f8f8;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.logo img {
+  width: 150px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Styles pour la section principale */
+.section-principale {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.bouton-inscription {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 50px;
+}
+
+/* Styles pour les intervenants */
+.intervenants {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.intervenant {
+  text-align: center;
+}
+
+.intervenant img {
+  width: 200px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  height: 200px;
+}
+
+/* Styles pour le pied de page */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.contact p {
+  margin: 0;
+}
+
+.reseaux-sociaux img {
+  width: 30px;
+  margin: 0 10px;
+}
+
+/*Mise en forme de la table tarif */
+table.tarifs {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 18px;
+  text-align: left;
+}
+
+table.tarifs th,
+table.tarifs td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+table.tarifs th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+/* Styles pour les liens de navigation */
+nav ul li a {
+  color: black;
+  /* Couleur du texte par défaut */
+  text-decoration: none;
+  padding: 10px 20px;
+  display: inline-block;
+  transition: background-color 0.3s, color 0.3s;
+  border-radius: 50px;
+  /* Transition pour un changement en douceur */
+}
+
+/* Changement de couleur au survol */
+nav ul li a:hover {
+  background-color: #137dff;
+  /* Couleur de fond au survol */
+  color: white;
+  /* Couleur du texte au survol */
+}
+
+/* Styles de la galerie */
+.galerie {
+  padding: 20px;
+  text-align: center;
+}
+
+.galerie h1 {
+  margin-bottom: 20px;
+  font-size: 2em;
+}
+
+.photos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.photo {
+  margin: 10px;
+  overflow: hidden;
+  width: calc(25% - 20px);
+  /* Ajustez la largeur en fonction de la taille désirée */
+  position: relative;
+}
+
+.photo img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s;
+}
+
+.photo:hover img {
+  transform: scale(1.1);
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .photo {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .photo {
+    width: calc(100% - 20px);
+  }
+}
